@@ -7,9 +7,9 @@ tax_rate = 0.1
 tax = purchase * tax_rate
 total = purchase + tax
 # 3: format amounts
-p = format(purchase, '.2f')
-t = format(tax, '.2f')
-tot = format(total, '.2f')
+p = format(purchase, ',.2f')
+t = format(tax, ',.2f')
+tot = format(total, ',.2f')
 # 4: print out amounts
 print("Hello {}, here is your sales receipt:".format(name))
 print("Subtotal = $ ", p.rjust(7, ' '))
